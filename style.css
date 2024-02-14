@@ -1,81 +1,113 @@
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
-.roboto-thin {
-font-family: "Roboto", sans-serif;
-font-weight: 100;
-font-style: normal;
+/* Default styles for the component. */
+:root {
+    --cont-width-lg : 89%;
+    --cont-width-md : 92%;
+    --cont-width-sm : 90%;
+    --color-sec: #042144;
+    --color-pry: #D0604C;
 }
-
-.roboto-light {
-font-family: "Roboto", sans-serif;
-font-weight: 300;
-font-style: normal;
+.container {
+    width: var(--cont-width-lg);
+    margin: auto;
 }
-
-.roboto-regular {
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-style: normal;
-}
-
-.roboto-medium {
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-style: normal;
-}
-
-.roboto-bold {
-font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-style: normal;
-}
-
-.roboto-black {
-font-family: "Roboto", sans-serif;
-font-weight: 900;
-font-style: normal;
-}
-
-.roboto-thin-italic {
-font-family: "Roboto", sans-serif;
-font-weight: 100;
-font-style: italic;
-}
-
-.roboto-light-italic {
-font-family: "Roboto", sans-serif;
-font-weight: 300;
-font-style: italic;
-}
-
-.roboto-regular-italic {
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-style: italic;
-}
-
-.roboto-medium-italic {
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-style: italic;
-}
-
-.roboto-bold-italic {
-font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-style: italic;
-}
-
-.roboto-black-italic {
-font-family: "Roboto", sans-serif;
-font-weight: 900;
-font-style: italic;
-}
-
 body {
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 2rem;
+    background-color: var(--color-sec);
+    color: white;
+}
+header > img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+ul {
+    background-color: var(--color-pry);
+    border-radius: 10px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    margin-block: 1rem;
+}
+ul li {
+    display: inline;
+    padding: 0 3rem;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: all 400ms linear;
+}
+ul li a:hover {
+    color: var(--color-sec);
+}
+.sect1 {
+    background-image: url("./img/2303.i305.007.S.m005.c13.realistic\ curls\ female\ hair\ poster.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: 0 -4rem;
+    border-radius: 10px;
+}
+@media screen and (max-width:960px) {
+    .sect1 {
+        background-position: 0 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .sect1 {
+        background-position: -6rem 0;
+    }
+}
+.sect1 article {
+    background-color: #04214481;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect1 article p {
+    font-size: 40px;
+}
+.sect1 article p span {
+    font-size: 70px;
+    color: var(--color-sec);
+}
+.sect2 {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+.sect2 article {
+    flex: 1;
+    text-align: center;
+    background-color: var(--color-pry);
+    padding: 1rem 0;
+    border-radius: 10px;
+
+}
+h3, p {
+    margin-block: 10px;
+}
+.sect2 article i {
+    padding: 3rem;
+    font-size: 5rem;
+}
+footer {
+    display: flex;
+    align-items: center;
+}
+footer .footer-logo {
+    flex: 1;
+}
+footer .footer-logo img {
+    width: 110px;
 }
