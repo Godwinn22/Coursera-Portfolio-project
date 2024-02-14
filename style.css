@@ -112,7 +112,7 @@ footer .footer-logo {
 footer .footer-logo img {
     max-width: 30%;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:600px){
     footer {
         flex-direction: column;
     }
