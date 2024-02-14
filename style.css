@@ -85,6 +85,7 @@ ul li a:hover {
     margin-top: 1rem;
     margin-bottom: 1rem;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .sect2 article {
     flex: 1;
@@ -109,5 +110,5 @@ footer .footer-logo {
     flex: 1;
 }
 footer .footer-logo img {
-    width: 110px;
+    max-width: 30%;
 }
